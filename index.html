@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>notSubmit</title>
+    
+    <!-- <style>
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+  
+      #evil-button {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 2rem;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="l-form">
+        <div class="w-form">
+            <form action="" class="form">
+                <h1 class="form-title">Leave Feedback</h1>
+                <div class="form-div">
+                    <input type="text" class="form-input" placeholder=" ">
+                    <label for="" class="form-label">Lahrasab</label>
+                </div>
+                <!-- <div class="form-div">
+                    <input type="text" class="form-input" placeholder=" ">
+                    <label for="" class="form-label">Contact No</label>
+                </div> -->
+                <div class="form-div">
+                    <input type="text" class="form-input" placeholder=" " style="height:100px;font-size:14pt;">
+                    <label for="" class="form-label">Feedback</label>
+                    
+                </div>
+                <input type="submit" class="form-button" value="Submit" >
+                <script>
+                    var btn = document.querySelector('.form-button')
+                    var position;
+                    btn.addEventListener('mouseover', function () {
+                        position ? (position = 0) : (position = -150);
+                        btn.style.transform = `translate(${position}px, 0px)`
+                        btn.style.transition = 'all 0.3s ease'
+                    })
+                </script>
+            </form>
+        </div>
+    </div>
+  </body>
+  </html>
